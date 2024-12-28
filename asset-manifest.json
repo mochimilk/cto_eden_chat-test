@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cto_eden_chat-test/static/css/main.448e5b09.css",
+    "main.js": "/cto_eden_chat-test/static/js/main.a28643c1.js",
+    "index.html": "/cto_eden_chat-test/index.html",
+    "main.448e5b09.css.map": "/cto_eden_chat-test/static/css/main.448e5b09.css.map",
+    "main.a28643c1.js.map": "/cto_eden_chat-test/static/js/main.a28643c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.448e5b09.css",
+    "static/js/main.a28643c1.js"
+  ]
+}
