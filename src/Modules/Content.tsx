@@ -13,22 +13,19 @@ import {
   MenuPopover,
   MenuList,
   MenuItem,
-  Body2,
-  Title1,
   Title3,
   Body1,
 } from "@fluentui/react-components";
 import {
   MoreHorizontalRegular,
-  BranchRequestRegular,
-  CubeRegular,
-  BranchRegular,
-  Sparkle20Regular,
   DesignIdeas20Filled,
   Code20Filled,
   Flowchart20Filled,
   SendRegular,
   ArrowResetRegular,
+  ComposeRegular,
+  AttachRegular,
+  AppsRegular,
 } from "@fluentui/react-icons";
 import {
   PanelLeftContract,
@@ -70,19 +67,14 @@ const Content: React.FC<ContentProps> = ({
               />
             </Tooltip>
           )}
-          <Body1Strong style={{ color: "var(--colorNeutralForeground2)" }}>
-            Content
-          </Body1Strong>
         </div>
 
         <Toolbar style={{ width: "100%" }}>
           <ToolbarDivider />
-          <ToolbarButton
-            aria-label="Increase Font Size"
-            icon={<BranchRequestRegular />}
-          />
-          <ToolbarButton icon={<BranchRegular />} />
-          <ToolbarButton icon={<CubeRegular />} />
+
+          <Button appearance="subtle" icon={<ComposeRegular />}>
+            New Chat
+          </Button>
         </Toolbar>
 
         <Toolbar>
@@ -135,7 +127,8 @@ const Content: React.FC<ContentProps> = ({
             <Title3>What's your role?</Title3>
             <div className="promptButtonContainer">
               <div className="promptButton">
-                <DesignIdeas20Filled />
+                {/* <DesignIdeas20Filled /> */}
+                <h2 style={{lineHeight: '0%'}}>🧑🏽‍🎨</h2>
                 <Body1Strong>Designer</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
@@ -144,7 +137,8 @@ const Content: React.FC<ContentProps> = ({
               </div>
 
               <div className="promptButton">
-                <Code20Filled />
+                {/* <Code20Filled /> */}
+                <h2 style={{lineHeight: '0%'}}>👩🏻‍💻</h2>
                 <Body1Strong>Developer</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
@@ -153,7 +147,8 @@ const Content: React.FC<ContentProps> = ({
               </div>
 
               <div className="promptButton">
-                <Flowchart20Filled />
+                {/* <Flowchart20Filled /> */}
+                <h2 style={{lineHeight: '0%'}}>👩🏼‍💼</h2>
                 <Body1Strong>Product Manager</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
@@ -161,15 +156,26 @@ const Content: React.FC<ContentProps> = ({
                 </Body1>
               </div>
             </div>
-            <Body1 style={{color: "var(--colorNeutralForeground4)"}}>AI generated content may be incorrect. <span><a href="">Learn more.</a></span></Body1>
+            <Body1 style={{ color: "var(--colorNeutralForeground4)" }}>
+              AI generated content may be incorrect.{" "}
+              <span>
+                <a href="">Learn more</a>
+              </span>
+            </Body1>
           </div>
           <div className="chatInputContainer">
-            <input className="chatInput" placeholder="Ask me anything..."></input>
+            <input
+              className="chatInput"
+              placeholder="Ask me anything..."
+            ></input>
             <div className="chatTools">
-            <Button appearance="subtle" icon={<ArrowResetRegular/>}></Button>
-            <Button appearance="subtle" icon={<SendRegular/>}></Button>
+              <div>
+              <Button appearance="subtle" icon={<AttachRegular />}></Button>
+              <Button appearance="subtle" icon={<AppsRegular />}></Button>
+              </div>
+             
+              <Button appearance="subtle" icon={<SendRegular />}></Button>
             </div>
-            
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ body {
 ::-webkit-scrollbar {
   overflow-y: auto; /* Ensure scrollable content */
   scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: rgba(100, 100, 100, 0.7) transparent; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
 }
 
 /* Webkit-based browsers */
@@ -39,10 +39,13 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(100, 100, 100, 0.7);
   border-radius: 3px;
+  opacity: 0; /* Default state hidden */
+  transition: opacity 0.3s;
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
   background-color: rgba(100, 100, 100, 1);
+  opacity: 1;
 }
 
 ::-webkit-scrollbar-track {

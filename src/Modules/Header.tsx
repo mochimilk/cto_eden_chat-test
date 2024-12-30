@@ -48,8 +48,8 @@ const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode }) => {
           aria-label="App"
         />
         <Subtitle2 style={{ whiteSpace: "nowrap" }}>
-          cataclyst.ai
-          {/* <span style={{ fontWeight: 400 }}> | Sales Concierge</span> */}
+          Placeholder.ai
+          <span style={{ fontWeight: 400 }}> | Knowledge Mining</span>
         </Subtitle2>
         <Tag size="small" style={{ marginTop: 4 }}>
           Beta
