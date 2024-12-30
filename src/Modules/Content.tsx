@@ -35,6 +35,7 @@ import {
   Search,
 } from "../bundleIcons.tsx";
 import { useContentHooks } from "../Hooks/useContentHooks.tsx";
+import { Icon } from '@iconify-icon/react';
 
 interface ContentProps {
   isPanelOpen: boolean;
@@ -128,7 +129,10 @@ const Content: React.FC<ContentProps> = ({
             <div className="promptButtonContainer">
               <div className="promptButton">
                 {/* <DesignIdeas20Filled /> */}
-                <h2 style={{lineHeight: '0%'}}>🧑🏽‍🎨</h2>
+                {/* <h2 style={{lineHeight: '0%'}}>🧑🏽‍🎨</h2> */}
+                <Icon 
+                style={{ width: '28px'}}
+                icon="fluent-emoji:woman-artist-medium" width="28px" height="28px"></Icon>
                 <Body1Strong>Designer</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
@@ -138,7 +142,10 @@ const Content: React.FC<ContentProps> = ({
 
               <div className="promptButton">
                 {/* <Code20Filled /> */}
-                <h2 style={{lineHeight: '0%'}}>👩🏻‍💻</h2>
+                {/* <h2 style={{lineHeight: '0%'}}>👩🏻‍💻</h2> */}
+                <Icon 
+                        style={{ width: '28px'}}
+                icon="fluent-emoji:woman-technologist-light" width="28px" height="28px"></Icon>
                 <Body1Strong>Developer</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
@@ -148,7 +155,10 @@ const Content: React.FC<ContentProps> = ({
 
               <div className="promptButton">
                 {/* <Flowchart20Filled /> */}
-                <h2 style={{lineHeight: '0%'}}>👩🏼‍💼</h2>
+                {/* <h2 style={{lineHeight: '0%'}}>👩🏼‍💼</h2> */}
+                <Icon 
+                        style={{ width: '28px'}}
+                icon="fluent-emoji:woman-office-worker-medium-light" width="28px" height="28px"></Icon>
                 <Body1Strong>Product Manager</Body1Strong>
                 <Body1 style={{ color: "var(--colorNeutralForeground4" }}>
                   {" "}
